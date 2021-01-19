@@ -1,0 +1,103 @@
+.blog {
+    img {
+        width: 100%;
+        .xl(height, 100%);
+    }
+    .row:hover &-header__date,
+    .row:hover &-header__title,
+    .row:hover &-header__subtitle span,
+    .row:hover &__link{
+        border-color: @red;
+        color: @red;
+    }
+    &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+        .lg(margin-bottom, 10px);
+        &__date {
+            width: 76px;
+            height: 76px;
+            border: 2px solid @font-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: @font-color2;
+            text-transform: uppercase;
+            margin-right: 28px;
+            transition: 0.7s;
+            span {
+                font-size: 24px;
+                .sm(font-size, 12px);
+            }
+            .lg-block({
+                width: 60px;
+                height: 60px;
+            });
+            .sm-block({
+                font-size: 12px;
+                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+            });
+        }
+        &__title {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: @font-color;
+            margin-bottom: 19px;
+            font-weight: 700;
+            transition: 0.7s;
+            .lg-block({
+                font-size: 14px;
+                margin-bottom: 14px;
+            });
+            .sm-block({
+                font-size: 11px;
+                margin-bottom: 10px;
+            });
+        }
+        &__subtitle {
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            font-size: 13px;
+            color: @font-color2;
+            font-style: italic;  
+            span {
+                transition: 0.7s;
+                color: @font-color;
+            }
+            
+        }
+    }
+    &__text {
+        font-family: 'Roboto Spab';
+        font-size: 14px;
+        color: @font-color;
+        line-height: 24px;
+        margin-bottom: 34px;
+        .lg-block({
+            margin-bottom: 10px;
+            line-height: 20px;
+        });
+    }
+    &__link {
+        text-transform: uppercase;
+        color: @font-color;
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 13px;
+        transition: 0.7s;
+    }
+    .line {
+        height: 3px;
+        background: #ddd;
+        margin: 38px 0
+    }
+    .col-xl-7 {
+        .md(margin-top, 30px);
+    }
+}

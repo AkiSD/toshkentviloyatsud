@@ -1,0 +1,93 @@
+.about {
+    background: #f8f8f8;
+    .lg(text-align, center);
+    &-text {
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: @font-color;
+        margin-bottom: 70px;
+    }
+    &-slider {
+        &__item {
+            text-align: center;
+            &:hover .about-slider__icons {
+                display: block;
+            }
+        }
+
+        &__img {
+            position: relative;
+        }
+            img {
+            margin: 0 auto;
+            }
+            
+            &__icons {
+                position: absolute;
+                width: 100%;
+                bottom: 32px;
+                text-align: center;
+                display: none;
+                a {
+                    display: inline-flex;
+                    width: 28px;
+                    height: 28px;
+                    color: @white;
+                    font-size: 16px;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover {
+                        background: @red;
+                    }
+                }
+            }
+            &__title {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+                color: @font-color;
+                margin: 20px 0 15px;
+            }
+            &__subtitle {
+                font-family: 'Roboto Slab';
+                font-weight: 400;
+                font-size: 13px;
+                color: @font-color;
+            }
+            &__prev,
+            &__next {
+                border: none;
+                width: 35px;
+                height: 38px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #8b8b8b;
+                color: @white;
+                font-size: 25px;
+                position: absolute;
+                z-index: 99;
+                top: 106px;
+                cursor: pointer;
+                &:hover {
+                    background: @red;
+                }
+            }
+            &__prev {
+                left: 7px;
+                .xl(left, 24px);
+                .lg(left, 41px);
+                .md(left, 0);
+                .sm(left, 14px);
+            }
+            &__next {
+                right: 7px;
+                .xl(right, 24px);
+                .lg(right, 41px);
+                .md(right, 0);
+                .sm(right, 14px);
+            }
+        }
+}

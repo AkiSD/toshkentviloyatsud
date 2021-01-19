@@ -1,0 +1,43 @@
+.services {
+    .lg(padding-bottom, 50px);
+    .sm(padding-bottom, 0);
+    &-card {
+        text-align: center;
+        &:hover &__circle {
+            background: @red;
+            color: @white;
+        }
+        &__circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 29px;
+            font-size: 35px;
+            color: @red;
+            transition: 0.7s;
+        }
+        &__title {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: @font-color;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        &__subtitle {
+            font-size: 14px;
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            font-size: 14px;
+            color: @font-color;
+            line-height: 24px;
+        }
+        
+    }
+    .col-md-6 {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,49 @@
+.clients {
+    background: #f8f8f8;
+    &-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 920px;
+        margin: 0 auto 70px;
+        flex-wrap: wrap;
+        .lg(justify-content, center);
+        .sm(margin-bottom, 30px);
+        img {
+            .lg(margin, 15px);
+        }
+    }
+    &-slider {
+        font-family: 'Rotobo Slab';
+        color: @font-color;
+        text-align: center;
+        &__text {
+            max-width: 770px;
+            font-weight: 400;
+            font-size: 18px;           
+            line-height: 30px;  
+            margin: 0 auto 40px;
+        }
+        &__name {
+            font-size: 20px;
+            margin-bottom: 40px;       
+        }
+        &__dots {
+            display: flex;
+            justify-content: center;
+            button {
+                display: none;
+            }
+            li {
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background: #ddd;
+                margin: 0 4px;
+            }
+            .slick-active {
+                background: @red;
+            }
+        }
+    }
+}
